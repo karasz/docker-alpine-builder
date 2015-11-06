@@ -13,7 +13,7 @@ RUN apk add --update bash alpine-sdk bc bison strace htop automake autoconf \
 RUN rm -rf /var/cache/apk/*
 # replace some links..
 RUN rm -rf /bin/sh && ln -svf /bin/bash /bin/sh
-RUN rm -rf /usr/bin/vi && ln -svf /usr/bin/vim /usr/bin/vim
+RUN rm -rf /usr/bin/vi && ln -svf /usr/bin/vim /usr/bin/vi
 
 ADD http://ftp.gnu.org/gnu/time/time-1.7.tar.gz /tmp/time-1.7.tar.gz
 ADD docker/* /tmp/
